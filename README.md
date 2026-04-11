@@ -1,1 +1,0 @@
-# megasequia-chile-quillota
