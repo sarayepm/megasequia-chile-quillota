@@ -1,0 +1,115 @@
+/*Buscar fuentes en Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--blanco: #eeeeee;
+	--negro: #1a1a1a;
+	--café1: #292016;
+	--café2: #644d32;
+	--café3: #916d45;
+	--rojo1: #2e0606;
+	--rojo2: #6b1616;
+	--rojo3: #942020;
+	--naranja1: #5f1c08;
+	--naranja2: #c2640c;
+	--naranja3: #fc9b1d;
+	--dorado1: #cf9414;
+	--dorado2: #ebcb3c;
+	--dorado3: #ece367;
+	--extra1: #e6af82;
+	--extra2: #555555;
+	--extra3: #555555;
+	/* INTERESANTE */
+}
+
+* {
+	font-family: Montserrat, sans-serif;
+	color: var(--negro);
+	transition: all .2s;
+}
+
+body {
+	background-color: var(--blanco);
+	margin: 8px;
+	padding: 0;
+}
+
+h1, header {
+	font-family: Boldonse, sans-serif;
+}
+
+header {
+	font-size: 35px;
+	text-align: center;
+}
+
+nav {
+	background-color: var(--café2);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	margin: 10px auto;
+}
+
+nav a {
+	color: var(--extra1);
+	padding: 1.4%;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: var(--naranja1);
+	color: var(--naranja3);
+}
+
+nav #active {
+	background-color: var(--dorado2);
+	color: var(--naranja1);
+	font-weight: bold;
+}
+
+nav #active:hover {
+	background-color: var(--dorado3);
+	color: var(--naranja2);
+}
+
+footer {
+	margin-top: 50px;
+}
+
+@media (min-width: 768px){
+	header h1 {
+		font-size: 40px;
+		margin: 0;
+	}
+
+	nav {
+		margin: 10px auto;
+		display: flex;
+		width: max-content;
+		flex-flow: column wrap;
+	}
+
+	nav a {
+		padding: auto;
+	}
+}
+
+@media (min-width: 1024px){
+	header {
+		font-size: 75px;
+		margin: 0;
+	}
+
+	nav {
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		width: 100%;
+	}
+
+	nav a {
+		width: max-content;
+		margin: 0;
+	}
+}
