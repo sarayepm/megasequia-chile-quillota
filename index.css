@@ -34,6 +34,16 @@ body {
 	padding: 0;
 }
 
+#headim {
+	background-image: url('./media/hola.avif');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	padding: 7.5%;
+	filter: brightness(80%) saturate(120%) contrast(130%);
+}
+
 h1, header {
 	font-family: Boldonse, sans-serif;
 }
@@ -93,6 +103,18 @@ footer {
 	nav a {
 		padding: auto;
 	}
+
+	h2 {
+		font-size: 30px;
+	}
+
+	h3 {
+		font-size: 22px;
+	}
+
+	p, li {
+		font-size: 18px;
+	}
 }
 
 @media (min-width: 1024px){
@@ -111,5 +133,22 @@ footer {
 	nav a {
 		width: max-content;
 		margin: 0;
+	}
+
+	h2 {
+		font-size: 34px;
+	}
+
+	h3 {
+		font-size: 24px;
+	}
+
+	p, li {
+		font-size: 22px;
+	}
+
+	.img.quillota {
+		width: 25%;
+		float: right;
 	}
 }
