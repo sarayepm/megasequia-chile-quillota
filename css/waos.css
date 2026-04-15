@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+	--blanco: #eeeeee;
+	--negro: #1a1a1a;
+	--café1: #292016;
+	--café2: #644d32;
+	--café3: #916d45;
+	--rojo1: #2e0606;
+	--rojo2: #6b1616;
+	--rojo3: #942020;
+	--naranja1: #5f1c08;
+	--naranja2: #c2640c;
+	--naranja3: #fc9b1d;
+	--dorado1: #cf9414;
+	--dorado2: #ebcb3c;
+	--dorado3: #ece367;
+	--extra1: #e6af82;
+}
+
+* {
+	font-family: Montserrat, sans-serif;
+	color: var(--negro);
+	transition: all .2s;
+}
+
+html {
+	font-size: 62.5%;
+	height: 100%;
+}
+
+body {
+	font-size: 1.6rem;
+	background-color: var(--blanco);
+	margin: 0.8rem;
+	padding: 0;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+}
+
+h1, header {
+	font-family: Boldonse, sans-serif;
+}
+
+header {
+	font-size: 4rem;
+	text-align: center;
+	margin: 1rem 0;
+}
+
+nav {
+	background-color: var(--café2);
+	display: flex;
+	flex-flow: column wrap;
+	justify-content: center;
+	margin: 1rem auto;
+}
+
+nav a {
+	color: var(--extra1);
+	padding: 1.4%;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: var(--naranja1);
+	color: var(--naranja3);
+}
+
+nav #active {
+	background-color: var(--dorado2);
+	color: var(--naranja1);
+	font-weight: bold;
+}
+
+nav #active:hover {
+	background-color: var(--dorado3);
+	color: var(--naranja2);
+}
+
+main {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	overflow: hidden;
+}
+
+section {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1rem;
+	padding: 2rem;
+
+	overflow-y: auto;
+	scroll-behavior: smooth;
+
+	width: 100%;       
+    max-width: 90%; 
+	margin: 0 auto;   
+}
+
+section div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	background-color: var(--extra1);
+	padding: 2rem;
+	border-radius: 1rem;
+	box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.2);
+}
+
+section h2 {
+	font-size: 2.2rem;
+	margin-bottom: 1rem;
+}
+
+section p {
+	text-align: center;
+	margin-bottom: 1.5rem;
+    font-size: 3.5rem;
+}
+
+section img {
+	width: 100%;
+	height: auto;
+	border-radius: 1rem;
+}
+
+footer {
+	margin-top: 1rem;
+	text-align: center;
+}
+
+@media (min-width: 768px){
+	header {
+		font-size: 5rem;
+		margin: 0;
+	}
+
+	nav {
+		flex-flow: row wrap;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+@media (min-width: 1024px){
+	header {
+		font-size: 6rem;
+		margin: 0;
+	}
+
+	nav {
+		flex-flow: row wrap;
+		align-items: center;
+		width: 100%;
+	}
+
+	nav a {
+		width: max-content;
+		margin: 0;
+	}
+}
