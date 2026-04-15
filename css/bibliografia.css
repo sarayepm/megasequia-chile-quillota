@@ -42,7 +42,7 @@ body {
 	background-attachment: fixed;
 	padding: 7.5%;
 	filter: brightness(80%) saturate(120%) contrast(130%);
-}
+}/*Esto*/
 
 h1, header {
 	font-family: Boldonse, sans-serif;
@@ -86,11 +86,11 @@ nav #active:hover {
 .img.noagua {
 	width: 100%;
 	filter: drop-shadow(0 0 5px #20202075);
-}
+}/*Esto*/
 
 li a:hover {
 	color: var(--rojo3);
-}
+}/*Esto*/
 
 footer {
 	margin-top: 50px;
@@ -115,11 +115,11 @@ footer {
 
 	h2 {
 		font-size: 30px;
-	}
+	}/*Esto*/
 
 	p {
 		font-size: 18px;
-	}
+	}/*Esto*/
 }
 
 @media (min-width: 1024px){
@@ -142,13 +142,13 @@ footer {
 
 	h2 {
 		font-size: 34px;
-	}
+	}/*Esto*/
 
 	p, li {
 		font-size: 22px;
-	}
+	}/*Esto*/
 
 	.img.noagua {
 		width: 40%;
-	}
+	}/*Esto*/
 }
