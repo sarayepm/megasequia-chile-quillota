@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
 
 :root {
 	--blanco: #eeeeee;
@@ -49,11 +50,8 @@ body {
 	filter: brightness(80%) saturate(120%) contrast(130%);
 }
 
-h1, header {
-	font-family: Boldonse, sans-serif;
-}
-
 header {
+	font-family: Boldonse, sans-serif;
 	font-size: 4rem;
 	text-align: center;
 	margin: 1rem 0;
@@ -71,6 +69,8 @@ nav a {
 	color: var(--extra1);
 	padding: 1.4%;
 	text-decoration: none;
+	font-family: "Special Elite", system-ui;
+	font-size: 20px;
 }
 
 nav a:hover {

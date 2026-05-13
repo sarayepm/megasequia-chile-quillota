@@ -1,5 +1,7 @@
 /*Buscar fuentes en Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Special+Elite&display=swap');
 
 :root {
 	--blanco: #eeeeee;
@@ -29,7 +31,6 @@
 
 body {
 	background-color: var(--blanco);
-	margin: 8px 40px;
 	padding: 0;
 }
 
@@ -43,12 +44,21 @@ body {
 	filter: brightness(80%) saturate(120%) contrast(130%);
 }
 
-h1, header {
-	font-family: Boldonse, sans-serif;
+main {
+	margin: 8px 40px;
+}
+
+hr {
+	border: 1px solid var(--blanco);
+	height: 26px;
 }
 
 header {
-	font-size: 35px;
+	margin: 48px;
+	/*font-family: "Special Elite", system-ui;*/
+	font-family: "Fondamento", cursive;
+	font-size: 74px;
+	font-weight: 600;
 	text-align: center;
 }
 
@@ -64,6 +74,7 @@ nav a {
 	color: var(--extra1);
 	padding: 1.4%;
 	text-decoration: none;
+	font-family: "Special Elite", system-ui;
 	font-size: 20px;
 }
 
@@ -88,16 +99,36 @@ footer {
 	margin-top: 64px;
 }
 
-@media (min-width: 768px){
-	header h1 {
+.img-seq {
+	width: 460px;
+	height: auto;
+	border-radius: 9px;
+}
+
+@media (min-width: 319px) {
+	body {
+		margin: 0;
+		padding: 0;
+	}
+
+	header {
 		font-size: 40px;
 		margin: 0;
+		padding: 4px;
+	}
+
+}
+
+@media (min-width: 768px){
+	header {
+		font-size: 60px;
+		margin: 0;
+		padding: 4px;
 	}
 
 	nav {
 		margin: 10px auto;
 		display: flex;
-		width: max-content;
 		flex-flow: column wrap;
 	}
 
@@ -111,6 +142,7 @@ footer {
 
 	h3 {
 		font-size: 28px;
+		font-style: italic;
 	}
 
 	p, li {
@@ -120,8 +152,7 @@ footer {
 
 @media (min-width: 1024px){
 	header {
-		font-size: 75px;
-		margin: 0;
+		font-size: 74px;
 	}
 
 	nav {
@@ -137,11 +168,14 @@ footer {
 	}
 
 	h2 {
+		font-family: "Fondamento", cursive;
+		font-style: italic;
 		font-size: 36px;
 	}
 
 	h3 {
 		font-size: 26px;
+		font-style: italic;
 	}
 
 	p, li {

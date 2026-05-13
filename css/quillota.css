@@ -1,5 +1,7 @@
 /*Buscar fuentes en Google Fonts*/
 @import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fondamento:ital@0;1&family=Special+Elite&display=swap');
 
 :root {
 	--blanco: #eeeeee;
@@ -34,6 +36,10 @@ body {
 	padding: 0;
 }
 
+main {
+	margin: 0px 26px;
+}
+
 #headim {
 	background-image: url('../media/hola.avif');
 	background-position: center;
@@ -44,13 +50,15 @@ body {
 	filter: brightness(80%) saturate(120%) contrast(130%);
 }/*Esto*/
 
-h1, header {
-	font-family: Boldonse, sans-serif;
-}
-
 header {
+	font-family: Boldonse, sans-serif;
 	font-size: 35px;
 	text-align: center;
+}
+
+hr {
+	border: 1px solid var(--blanco);
+	height: 5px;
 }
 
 nav {
@@ -65,6 +73,8 @@ nav a {
 	color: var(--extra1);
 	padding: 1.4%;
 	text-decoration: none;
+	font-family: "Special Elite", system-ui;
+	font-size: 20px;
 }
 
 nav a:hover {
@@ -97,7 +107,7 @@ footer {
 }
 
 @media (min-width: 768px){
-	header h1 {
+	header {
 		font-size: 40px;
 		margin: 0;
 	}
@@ -105,7 +115,6 @@ footer {
 	nav {
 		margin: 10px auto;
 		display: flex;
-		width: max-content;
 		flex-flow: column wrap;
 	}
 
