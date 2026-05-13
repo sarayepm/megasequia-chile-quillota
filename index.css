@@ -99,12 +99,6 @@ footer {
 	margin-top: 64px;
 }
 
-.img-seq {
-	width: 460px;
-	height: auto;
-	border-radius: 9px;
-}
-
 @media (min-width: 319px) {
 	body {
 		margin: 0;
